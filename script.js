@@ -1,33 +1,38 @@
-var x = document.getElementById("output");
+var getInput = document.getElementById('the-input');
 
-console.log(x);
+const listings = [];
 
-var y = document.getElementById("output").innerHTML;
-
-console.log(y);
-
-var z = document.getElementById("create-listing");
-
-function gettingListing() {
-    z;
+//check if form is empty
+function validateForm() {
+    let x = getInput;
+    if (x.value == '') {
+        alert('Empty Field');
+    } else {
+        displayOutput();
+    };
+    return;
 };
 
-console.log(z);
-
-//console log output
-var consoleOutput = document.getElementById("output").textContent;
-
-console.log(consoleOutput);
-
-//dislay output
+//display the outputs
 function displayOutput() {
-    document.getElementById("text-display").innerHTML = consoleOutput;
+    var addToArray = listings.push(getInput.value);
+    
+    getInput.value = '';
+
+    console.log('Console Output: ')
+    forLoop();
+
+    return;
 };
 
-displayOutput();
+//loop through listings
+function forLoop() {
+    let text = '';
+    for (let i = 0; i < listings.length; i++) {
+        text += listings[i] + '</br>';
+        console.log(listings[i]);
+    };
 
-//get element
+    document.getElementById('display').innerHTML = text;
 
-//add to array
-
-//list array
+};
