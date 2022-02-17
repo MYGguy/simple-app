@@ -10,8 +10,10 @@
     </head>
     <body> 
 
-        <input type="text" name="the-input" id="the-input">
-        <button onclick="displayOutput()" type="button" id="button">Send</button>
+        <form name="the-form">
+            <input type="text" name="the-input" id="the-input">
+            <button onclick="displayOutput(); validateForm()" form="the-form" for="the-input" type="button" id="button">Send</button>
+        </form>
 
         </br>
         Output: 

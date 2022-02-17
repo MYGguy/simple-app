@@ -2,6 +2,17 @@ var getInput = document.getElementById('the-input');
 
 const listings = [];
 
+
+//latest - get to work
+function validateForm() {
+    let x = getInput.value;
+    if (x == '') {
+        alert('Empty Field');
+    };
+    return;
+};
+//this ^
+
 function displayOutput() {
     var addToArray = listings.push(getInput.value);
     
