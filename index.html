@@ -10,16 +10,24 @@
     </head>
     <body> 
 
-        <form name="the-form">
-            <input type="text" name="the-input" id="the-input">
-            <button onclick="validateForm()" form="the-form" for="the-input" type="button" id="button">Send</button>
-        </form>
+        <div id="page">
 
-        </br>
-        Output: 
-        </br>
-        <p id="display">
-        </p>
+            <div id="input-field">
+                <h2>List an item</h2>
+                <form name="the-form">
+                    <input type="text" name="the-input" id="the-input">
+                    <button onclick="validateForm()" form="the-form" for="the-input" type="button" id="button">Send</button>
+                </form>
+            </div>
+
+            <div id="the-display">
+                <strong>Output:</strong> 
+                </br>
+                <p id="display">
+                </p>
+            </div>
+
+        </div>
 
         <script src="script.js" async defer></script>
     </body>
