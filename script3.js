@@ -2,17 +2,18 @@ var getInput = document.getElementById('the-input');
 
 const listings = [];
 
-
-//latest - get to work
+//check if form is empty
 function validateForm() {
-    let x = getInput.value;
-    if (x == '') {
+    let x = getInput;
+    if (x.value == '') {
         alert('Empty Field');
+    } else {
+        displayOutput();
     };
     return;
 };
-//this ^
 
+//display the outputs
 function displayOutput() {
     var addToArray = listings.push(getInput.value);
     
@@ -24,6 +25,7 @@ function displayOutput() {
     return;
 };
 
+//loop through listings
 function forLoop() {
     let text = '';
     for (let i = 0; i < listings.length; i++) {
