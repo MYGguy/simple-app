@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>simple-app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!--a field to type stuff,-->
+        <form action="script.js" target="output" method="post" name="create-listing">
+            <label for="listing">Create a listing</label></br>
+            <input type="text" id="listing" name="listing-name">
+
+            <!--<button type="submit" formmethod="post" form="create-listing" formtarget="_parent" formaction="index.html">Create</button>-->
+            <input type="submit" value="Submit">
+
+            <output id="output" name="output" form="create-listing" for="listing"></output>
+
+        </form>
+
+        <div id="text-display">
+        </div>
+        
+        <div id="the-output">
+            <p>hello 2</p>
+        </div>
+        <!--a place for the listed items-->
+
+        <!--field to create presets-->
+
+        <!--a place for presets-->
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
