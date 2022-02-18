@@ -2,14 +2,37 @@ var getInput = document.getElementById('the-input');
 
 const listings = [];
 
+const presettings = [];
+
 //check if form is empty
 function validateForm() {
     let x = getInput;
     if (x.value == '') {
         alert('Empty Field');
-    } else {
-        displayOutput();
+        return false;
     };
+    return;
+};
+
+//loop through listings or presets
+function forLoop(some) {
+    let text = '';
+    let consoleText = '';
+    
+    for (let i = 0; i < some.length; i++) {
+        text += some[i] + '</br>';
+        consoleText = some[i];
+
+        if (some == listings) {
+            console.log(consoleText);
+            document.getElementById('display').innerHTML = text;
+        } else if (some == presettings) {
+            console.log(consoleText);
+            document.getElementById('presets').innerHTML = text;
+        };
+
+    };
+
     return;
 };
 
@@ -17,22 +40,26 @@ function validateForm() {
 function displayOutput() {
     var addToArray = listings.push(getInput.value);
     
-    getInput.value = '';
+    console.log('Console Output: ');
+    
+    forLoop(listings);
 
-    console.log('Console Output: ')
-    forLoop();
+    getInput.value = '';
 
     return;
 };
 
-//loop through listings
-function forLoop() {
-    let text = '';
-    for (let i = 0; i < listings.length; i++) {
-        text += listings[i] + '</br>';
-        console.log(listings[i]);
-    };
 
-    document.getElementById('display').innerHTML = text;
+//create presets
+function createPreset() {
+    //document.getElementById('presets').innerHTML = getInput.value;
+    var addToArray = presettings.push(getInput.value);
+    
+    console.log('Saved Presets: ');
 
+    forLoop(presettings);
+
+    getInput.value = '';
+
+    return;
 };

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Listings</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -14,16 +14,24 @@
 
             <div id="input-field">
                 <h2>List an item</h2>
-                <form name="the-form">
+                <form name="the-form" method="get">
                     <input type="text" name="the-input" id="the-input">
-                    <button onclick="validateForm()" form="the-form" for="the-input" type="button" id="button">Send</button>
+                    <button onclick="validateForm(); displayOutput()" form="the-form" type="button" id="button">Send</button>
+                    <button onclick="validateForm(); createPreset()" form="the-form" value="create" id="create-preset">Create Preset</button>
                 </form>
             </div>
 
-            <div id="the-display">
+            <div class="the-displays">
                 <strong>Output:</strong> 
                 </br>
                 <p id="display">
+                </p>
+            </div>
+
+            <div class="the-displays">
+                <strong>Presets:</strong> 
+                </br>
+                <p id="presets">
                 </p>
             </div>
 
