@@ -9,9 +9,8 @@ function validateForm() {
     let x = getInput;
     if (x.value == '') {
         alert('Empty Field');
-        return false;
+        return Boolean;
     };
-    return;
 };
 
 //loop through listings or presets
@@ -38,14 +37,17 @@ function forLoop(some) {
 
 //display the outputs
 function displayOutput() {
-    var addToArray = listings.push(getInput.value);
-    
-    console.log('Console Output: ');
-    
-    forLoop(listings);
+    if (getInput.value !== '') {
+        var addToArray = listings.push(getInput.value);
+        
+        console.log('Console Output: ');
+        
+        forLoop(listings);
 
-    getInput.value = '';
-
+        getInput.value = '';
+    } else {
+        return;
+    };
     return;
 };
 
@@ -53,13 +55,14 @@ function displayOutput() {
 //create presets
 function createPreset() {
     //document.getElementById('presets').innerHTML = getInput.value;
-    var addToArray = presettings.push(getInput.value);
-    
-    console.log('Saved Presets: ');
+    if (getInput.value !== '') {
+        var addToArray = presettings.push(getInput.value);
+        
+        console.log('Saved Presets: ');
 
-    forLoop(presettings);
+        forLoop(presettings);
 
-    getInput.value = '';
-
-    return;
+        getInput.value = '';
+    };
+return;
 };
