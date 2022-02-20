@@ -59,3 +59,7 @@ body {
 .display {
     text-transform: capitalize;
 }
+
+.btn {
+    background-color: blue;
+}

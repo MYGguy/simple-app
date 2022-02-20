@@ -8,8 +8,10 @@ const presettings = [];
 function validateForm() {
     let x = getInput;
     if (x.value == '') {
-        alert('Empty Field');
-        return Boolean;
+        alert('Empty Field');        
+        return;
+    } else {
+        focusInput();
     };
 };
 
@@ -40,8 +42,6 @@ function forLoop(some) {
     return;
 };
 
-
-
 //display the outputs
 function displayOutput() {
     if (getInput.value !== '') {
@@ -52,12 +52,13 @@ function displayOutput() {
         forLoop(listings);
 
         getInput.value = '';
+
+        focusInput();
     } else {
         return;
     };
     return;
 };
-
 
 //create presets
 function createPreset() {
@@ -69,6 +70,8 @@ function createPreset() {
         forLoop(presettings);
 
         getInput.value = '';
+
+        focusInput();
     };
 return;
 };
@@ -82,6 +85,15 @@ function presetClick(presetIndex) {
 
     getInput.value = getButtonIndex;
 
+    focusInput();
+
     return;
 };
 
+function focusInput() {
+    getInput.focus();
+
+    return;
+};
+
+runx();
