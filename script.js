@@ -16,10 +16,14 @@ function validateForm() {
 //loop through listings or presets
 function forLoop(some) {
     let text = '';
+    let presetText = '';
     let consoleText = '';
     
     for (let i = 0; i < some.length; i++) {
         text += some[i] + '</br>';
+        presetText += '<button id=' + i + '>' + some[i] + '</button>' + '</br>';
+
+
         consoleText = some[i];
 
         if (some == listings) {
@@ -27,13 +31,20 @@ function forLoop(some) {
             document.getElementById('display').innerHTML = text;
         } else if (some == presettings) {
             console.log(consoleText);
-            document.getElementById('presets').innerHTML = text;
+            
+            //make each one a button
+            //document.getElementById('presets').innerHTML = text;
+            document.getElementById('presets').innerHTML = presetText;
+
+            //
         };
 
     };
 
     return;
 };
+
+
 
 //display the outputs
 function displayOutput() {
@@ -66,3 +77,4 @@ function createPreset() {
     };
 return;
 };
+
