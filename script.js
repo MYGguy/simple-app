@@ -21,8 +21,7 @@ function forLoop(some) {
     
     for (let i = 0; i < some.length; i++) {
         text += some[i] + '</br>';
-        presetText += '<button id=' + i + '>' + some[i] + '</button>' + '</br>';
-
+        presetText += '<button class=presetButtons onclick=presetClick(' + i + ') id=' + 'button' + i + ' value=' + some[i] + '>' + some[i] + '</button>' + '</br>';
 
         consoleText = some[i];
 
@@ -33,10 +32,7 @@ function forLoop(some) {
             console.log(consoleText);
             
             //make each one a button
-            //document.getElementById('presets').innerHTML = text;
             document.getElementById('presets').innerHTML = presetText;
-
-            //
         };
 
     };
@@ -65,7 +61,6 @@ function displayOutput() {
 
 //create presets
 function createPreset() {
-    //document.getElementById('presets').innerHTML = getInput.value;
     if (getInput.value !== '') {
         var addToArray = presettings.push(getInput.value);
         
@@ -76,5 +71,17 @@ function createPreset() {
         getInput.value = '';
     };
 return;
+};
+
+//when clicked on, find its value
+function presetClick(presetIndex) {
+    var getButtonIndex = document.getElementById('button' + presetIndex).value;
+
+    //test log
+    //console.log(getButtonIndex);
+
+    getInput.value = getButtonIndex;
+
+    return;
 };
 
