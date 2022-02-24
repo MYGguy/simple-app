@@ -54,12 +54,14 @@ body {
     color: rgb(26, 26, 26);
 
     padding: 10px;
-}
 
-.display {
     text-transform: capitalize;
 }
 
 .btn {
     background-color: blue;
+}
+
+.the-displays button {
+    text-transform: capitalize;
 }
