@@ -1,0 +1,41 @@
+//TODO
+
+sort outputs by name
+
+
+
+
+/////////////
+
+List of stuff
+
+Date written automatically
+
+Can make presets to add quicker
+
+    Instead of pressing submit, press + to create preset
+
+List is broken into categories based on the presets
+(a preset can be part of a bigger category)
+
+Presets can be clicked on to quickly create a listing
+
+Add a radio button and confirm to delete entries
+
+
+
+Presets can be clicked on to quickly create a listing
+
+    Make each preset a button
+	Add class to each preset
+        //Put a border around each preset-text-button
+    When clicked on, change the input.value to it
+
+
+
+Autofocus input after clicking stuff
+
+Each button is in a class which, when clicked, runs the function to focus input
+
+
+*bug FIXED - preset button only re-adds the first word.

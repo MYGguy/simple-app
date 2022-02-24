@@ -8,7 +8,7 @@ const presettings = [];
 function validateForm() {
     let x = getInput;
     if (x.value == '') {
-        alert('Empty Field');        
+        alert('Empty Field');
         return;
     } else {
         focusInput();
@@ -78,12 +78,15 @@ return;
 
 //when clicked on, find its value
 function presetClick(presetIndex) {
-    var getButtonIndex = document.getElementById('button' + presetIndex).value;
+    var getButtonIndex = document.getElementById('button' + presetIndex);
+
+    //get button index from array prototype
+    var getArrayPreset = presettings.prototype;
 
     //test log
     //console.log(getButtonIndex);
 
-    getInput.value = getButtonIndex;
+    getInput.value = presettings[presetIndex];
 
     focusInput();
 
@@ -95,5 +98,3 @@ function focusInput() {
 
     return;
 };
-
-runx();
