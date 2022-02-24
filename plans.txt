@@ -2,6 +2,9 @@
 
 sort outputs by name
 
+option to delete entries
+    shiftPush just like push, but remove the whole button
+
 
 
 

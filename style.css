@@ -6,11 +6,13 @@ body {
 
 #page {
     margin: 25px;
-
 }
 
 #input-field {
-    padding: 5px 0px 10px 0px;
+    max-width: 300px;
+
+    padding: 1px 20px 60px 20px;
+    margin: 10px;
 
     text-align: center;
     background-color: rgb(233, 233, 233);
@@ -42,13 +44,23 @@ body {
     font-weight: bold;
 }
 
+#create-preset {
+    float: right;
+}
+
+#button {
+    float: left;
+}
+
 #button:hover {
+    margin-bottom: -2px;
+    margin-top: -2px;
     border: outset rgb(43, 21, 139) 2px;
     border-radius: 15px;
 }
 
 .the-displays {
-    margin: 30px 50px auto 10px;
+    margin: 20px auto 20px 30px;
     font-family: sans-serif;
     color: rgb(26, 26, 26);
 
@@ -65,71 +77,4 @@ body {
 
 @media only screen and (min-width: 500px) {
 
-body {
-    background-color: rgb(247, 247, 247);
-
-    font-family: sans-serif;
 }
-
-#page {
-    margin: 50px;
-
-}
-
-#input-field {
-    padding: 10px 0px 10px 0px;
-    /*margin: auto 100px auto 100px;*/
-
-    text-align: center;
-    background-color: rgb(233, 233, 233);
-    border-radius: 10px;
-
-    color: rgb(26, 26, 26);
-
-    box-shadow: 0px 20px 50px -15px rgb(221, 221, 221);
-}
-
-#the-input {
-    border-radius: 5px;
-    border-color: rgb(43, 21, 139);
-    border-style: outset;
-
-    width: 300px;
-    height: 25px;
-}
-
-.button {
-    padding: 5px;
-    margin-left: 10px;
-
-    border-radius: 5px;
-    border: none;
-
-    background-color: rgb(214, 214, 214);
-    color: rgb(15, 15, 15);
-    font-weight: bold;
-}
-
-#button:hover {
-    border: outset rgb(43, 21, 139) 2px;
-    border-radius: 15px;
-}
-
-.the-displays {
-    margin: 30px 50px auto 10px;
-    font-family: sans-serif;
-    color: rgb(26, 26, 26);
-
-    padding: 10px;
-
-    text-transform: capitalize;
-}
-
-.the-displays button {
-    text-transform: capitalize;
-}
-
-}
-
-
-
