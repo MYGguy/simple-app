@@ -69,8 +69,17 @@ body {
     text-transform: capitalize;
 }
 
-.the-displays button {
+#presets button {
     text-transform: capitalize;
+    
+    padding: 5px;
+    margin: 5px;
+    
+    border-radius: 5px;
+    border: none;
+    
+    background-color: #F1F1F1;
+    color: rgb(15, 15, 15);
 }
 
 
