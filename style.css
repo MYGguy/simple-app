@@ -60,7 +60,10 @@ body {
 }
 
 .the-displays {
+    max-width: 300px;
+    
     margin: 20px auto 20px 30px;
+    
     font-family: sans-serif;
     color: rgb(26, 26, 26);
 

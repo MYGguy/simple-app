@@ -23,7 +23,7 @@ function forLoop(some) {
     
     for (let i = 0; i < some.length; i++) {
         text += some[i] + '</br>';
-        presetText += '<button class=presetButtons onclick=presetClick(' + i + ') id=' + 'button' + i + ' value=' + some[i] + '>' + some[i] + '</button>' + '</br>';
+        presetText += '<button class=presetButtons onclick=presetClick(' + i + ') id=' + 'button' + i + ' value=' + some[i] + '>' + some[i] + '</button> ';
 
         consoleText = some[i];
 
