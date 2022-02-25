@@ -52,7 +52,7 @@ body {
     float: left;
 }
 
-.button:hover {
+.button:active {
     /*border: outset rgb(43, 21, 139) 2px;
     border-radius: 15px;*/
     
