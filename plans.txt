@@ -5,7 +5,7 @@ sort outputs by name
 option to delete entries
     shiftPush just like push, but remove the whole button
     
-*bug - buttons stay hovered
+*bug-fixed - buttons stay hovered
 
 
 
