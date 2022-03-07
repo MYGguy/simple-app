@@ -1,16 +1,20 @@
 //TODO
 
-sort outputs by name
-
 option to delete entries
-    shiftPush just like push, but remove the whole button
-    
-*bug-fixed - buttons stay hovered
+    use splice just like push
 
+sort presets by name
 
+preset value to input value keep caps
+
+make enter submit or something
+
+#maybe- only first word of make capitalized
 
 
 /////////////
+
+*bug-fixed - buttons stay hovered
 
 List of stuff
 

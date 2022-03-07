@@ -45,6 +45,8 @@ function forLoop(some) {
 //display the outputs
 function displayOutput() {
     if (getInput.value !== '') {
+
+        //add current input value to listings array
         var addToArray = listings.push(getInput.value);
         
         console.log('Console Output: ');
@@ -63,6 +65,8 @@ function displayOutput() {
 //create presets
 function createPreset() {
     if (getInput.value !== '') {
+        
+        //add current input value to presettings array
         var addToArray = presettings.push(getInput.value);
         
         console.log('Saved Presets: ');
@@ -79,9 +83,6 @@ return;
 //when clicked on, find its value
 function presetClick(presetIndex) {
     var getButtonIndex = document.getElementById('button' + presetIndex);
-
-    //get button index from array prototype
-    var getArrayPreset = presettings.prototype;
 
     //test log
     //console.log(getButtonIndex);
